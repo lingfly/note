@@ -33,3 +33,51 @@ class Solution {
     }
 }
 ```
+
+```java
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.*;
+
+public class Main{
+
+    public static void main(String[] args)throws FileNotFoundException{
+        //System.out.println(new Solution().func());
+        new Solution().func();
+    }
+    static class Solution {
+        void func() throws FileNotFoundException {
+            //Scanner in= new Scanner(System.in);
+            Scanner in= new Scanner(new File("C:\\Users\\lingfly\\IdeaProjects\\first\\src\\in.txt"));
+            int n=in.nextInt();
+            int[][] v=new int[n][2];
+            for (int i=0;i<n;i++){
+                v[i][0]=in.nextInt();
+                v[i][1]=in.nextInt();
+            }
+            Arrays.sort(v, new Comparator<int[]>() {
+                @Override
+                public int compare(int[] o1, int[] o2) {
+                    return o1[0]-o2[0];
+                }
+            });
+            int ans=1;
+            int pre0=0,pre1=0;
+            for (int i=0;i<n;i++){
+                int min=v[i][1];
+                for (int j=0;j<n;j++){
+                    Math.min(min,v[j][1]);
+
+                }
+                if (v[i][0]>=pre0&&min>=pre1){
+                    ans++;
+                    pre0=v[i][0];
+                    pre1=min;
+                }
+            }
+            System.out.println(ans);
+        }
+    }
+
+}
+```
