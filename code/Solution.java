@@ -1,24 +1,29 @@
-import java.util.ArrayList;
-import java.util.List;
+
+import java.util.Collections;
 
 class Solution {
-
-    List<String> ans = new ArrayList<>();
-    public List<String> generateParenthesis(int n) {
-        func(n, n, "");
-        return ans;
-    }
-    void func(int u, int v,String str){
-        if(u==0&&v==0){
-            ans.add(str);
-            return;
+    public void nextPermutation(int[] nums) {
+        int len = nums.length;
+        int i = len-1;
+        while(i > 0){
+            if(nums[i]>nums[i-1]){
+                int temp = nums[i];
+                nums[i] = nums[i-1];
+                nums[i-1] = temp;
+                break;
+            }
+            else{
+                i--;
+            }
         }
-        if(u<v){
-            if(u>0) func(u-1, v, str+"(");
-            if(v>0) func(u, v-1, str+")");
-        }
-        else{
-            func(u-1, v, str+"(");
+        if(i==0){
+            int temp;
+            int start = 0, end = len-1;
+            while(start < end){
+                temp = nums[start];
+                nums[start] = nums[end];
+                nums[end] = temp;
+            }
         }
     }
 }
