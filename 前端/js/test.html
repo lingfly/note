@@ -5,19 +5,15 @@
 
   </head>
 <body>
-  <p id="p1" title="asd">zxc</p>
-  <div id="asd">
-    <ul id="purchases">
-      <li class="sale" title="ttt">Cheese</li>
-      <li class="sale important">Milk</li>
-    </ul>
+
+  <div id="testdiv">
+    <p>THis is <em>my</em> content</p>
   </div>
 </body>
 <script type="text/javascript">
-  var body = document.getElementsByTagName("body")[0]
-  console.log(body)
-  var childs = body.childNodes
-  console.log(childs);
+  testdiv = document.getElementById("testdiv")
+  console.log(testdiv.innerHTML);
+  
   
 </script>
 </html>
