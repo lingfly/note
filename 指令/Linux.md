@@ -1,7 +1,7 @@
 1. netstat
 ```shell
 # 查找程序占用的端口
-netstat -ap | grep (PID or program)
+netstat -anp | grep (PID or program)
 ```
 
 2. ps
