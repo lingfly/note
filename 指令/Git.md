@@ -1,3 +1,16 @@
+
+## git config
+
+```sh
+# 列出所有设置
+git config --list
+
+# 设置用户名和密码
+git config --global user.name "lingfly"
+git config --global user.email "zhengzhongwei0@gmail.com"
+
+```
+
 ## 分支
 
 1. git branch
