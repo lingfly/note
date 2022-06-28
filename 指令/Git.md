@@ -56,3 +56,43 @@ git stash branch <branchName> <stash>
 
 
 ```
+
+
+## reset
+
+```sh
+git reset <--mixed> <commit>
+```
+
+1. hard: 重置工作区和暂存区，也就是说，如果使用hard参数，当前项目下所有已修改和已add到暂存区的内容都会被丢弃
+
+2. mixed: 重置暂存区，已add到暂存区的内容会被丢弃
+
+3. soft: 只重置HEAD指针，工作区和暂存区已有的内容不变，已commit的内容回退后放到暂存区
+
+4. keep: 重置工作区，已add到暂存区的内容不会改变，已修改但未add的内容会被丢弃
+
+## reflog
+
+查询所有可引用的历史版本，`git log`只能查到HEAD之前的版本，使用`git reset`后HEAD改变，被reset的版本用`git log`就查不到了。
+
+若误执行了reset操作，可以用`git reflog`查询reset前的版本，然后重新reset到误操作前的版本
+
+## push
+
+本地版本和远程版本不一致时可以使用强制push使远程接受本地的提交，比如push了多个commit之后，本地把多个commit reset后合并成一个commit，然后push，这是远程版本不一致，不强制的话需要先把reset掉那几个commit从远程拉下来merge，然后才能push
+
+```sh
+# 强制push
+git push orign master -f
+```
+
+## restore
+
+```sh
+# 把暂存区的文件改为未暂存，保留工作区的修改（如果暂存区和工作区有冲突，会取工作区）
+git restore --staged <file>
+
+# 把暂存区的文件改为未暂存，不保留工作区的修改
+git restore <file>
+```
