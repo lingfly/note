@@ -129,3 +129,26 @@ this is 7 in a number
 ```sh
 sed '/test/{ n; s/aa/bb/; }' file
 ```
+
+
+## awk
+
+
+### awk使用shell变量
+
+```sh
+var="abc"
+
+awk 'BEGIN{print "'$var'"}'
+```
+
+
+### 执行命令
+
+```sh
+awk '{system(pwd)}'
+
+awk '{system("ls "$0)}'
+
+awk '{cmd="ls "$0; system(cmd)}'
+```

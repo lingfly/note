@@ -14,3 +14,11 @@ ps -ef| grep (PID or program)
 ps aux | grep (PID or program)
 
 ```
+
+3. ls -Z 
+
+显示文件SElinux相关权限
+
+4. ps -efZ
+
+显示进程SElinux相关权限
