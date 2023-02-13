@@ -91,5 +91,14 @@ Identify:role:type
     * -m: 修改
     * -d: 删除
 
+## 查看audit日志
 
+路径：/var/log/audit/audit.log
 
+1. audit2why
+
+`audit2why < /var/log/audit/audit.log`
+
+2. audit2allow
+
+`audit2allow < /var/log/audit/audit.log`
