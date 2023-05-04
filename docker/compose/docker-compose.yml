@@ -1,7 +1,9 @@
+
 version: '3.3'
 services:
   mysql:
     image: mysql:8.0
+    network_mode: bridge
     ports:
       - 3306:3306
     secrets:
@@ -11,11 +13,27 @@ services:
     volumes:
       - ./data/mysql:/var/lib/mysql
       - ./config/mysql/config-file.cnf:/etc/mysql/conf.d/config-file.cnf
-    command: 
+    command:
       - "--character-set-server=utf8mb4"
       - "--collation-server=utf8mb4_0900_ai_ci"
       - "--default-time_zone=+8:00"
 
-secrets: 
-  mysql_pw: 
+  mongo:
+    image: mongo:4
+    network_mode: bridge
+    ports:
+      - 27017:27017
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: a12345
+
+  oracle:
+    image: oraclelinux:9
+    network_mode: bridge
+    ports:
+      - 1521:1521
+
+secrets:
+  mysql_pw:
     file: ./secrets/mysql/pw
