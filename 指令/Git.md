@@ -11,6 +11,13 @@ git config --global user.email "zhengzhongwei0@gmail.com"
 
 ```
 
+## git remote
+
+```sh
+# 本地仓库和远程仓库建立关联
+git remote add origin <remote-url>
+```
+
 ## 分支
 
 1. git branch

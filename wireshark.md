@@ -1,5 +1,12 @@
 # wireshark
 
+## tcpdump
+
+```sh
+# 生成cap文件
+tcpdump -i <网卡> -w net.cap
+```
+
 ## 报文过滤
 
 ### 过滤符
@@ -32,5 +39,10 @@
 
 1. http.request
 
+    1.1 http.request.uri
+
 2. http. response
 
+### 过滤端口
+
+tcp.port == 8080

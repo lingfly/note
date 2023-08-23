@@ -1,0 +1,41 @@
+
+
+\documentclass{article}
+
+\usepackage{changes}
+\usepackage{marginnote}
+
+\newcommand{\wordnote}[2]{\marginnote{#2}\textbf{#1}}
+
+\begin{document}
+
+
+
+
+Let's try adding a footnote\footnote{\added{With added text.}}.
+
+
+Let's try adding a footnote\textsuperscript{1}\marginpar{\footnotesize \textsuperscript{1} Let's try adding a footnote。}
+
+
+Let's try adding a footnote\marginpar{Let's try adding a footnote}
+
+
+Let's try adding a footnote\marginnote{Let's try adding a footnote}
+
+a
+
+b
+
+c
+
+aaaa bbbb\wordnote{ccc}{dddddddddddd}eeee
+
+dddd\wordnote{eeeee}{fffffffffffffffffffff}gggggggggggggggggggggggggg
+
+这是一个化学公式：H\textsuperscript{2}O。
+
+这是一个数学公式：$x\textsuperscript{i}$。
+
+
+\end{document}
