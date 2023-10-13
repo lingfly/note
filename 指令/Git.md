@@ -103,3 +103,12 @@ git restore --staged <file>
 # 把暂存区的文件改为未暂存，不保留工作区的修改
 git restore <file>
 ```
+
+## crlf
+
+场景一、代码在window提交，在windows使用（即默认场景）
+$ git config --global core.autocrlf true
+场景二、代码在windows提交，在Linux或者Mac系统或者Jenkins上专门打包为服务器使用，无需Git在pull时进行自动转换；（即Git在push时把CRLF转换成LF，pull时不转换）
+$ git config --global core.autocrlf input
+场景三、不想要Git自动转换：
+$ git config --global core.autocrlf false
