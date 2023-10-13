@@ -26,11 +26,6 @@
 
 ## openapi secret key
 
-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
+
 
 ## aliyun
-AccessKey ID:
-LTAI5tKnDhnPDzLZ8zYy3B5y
-
-AccessKey Secret:
-LZEK6Gjl8zJXGN6CGkOggDflfXTUuI
