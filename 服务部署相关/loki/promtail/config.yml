@@ -1,0 +1,56 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /tmp/positions.yaml
+
+clients:
+  - url: http://192.168.0.8:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: wukong
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          service: wk_plm
+          instance: 192.168.0.8
+          __path__: /var/log/java/wk_plm/*.log
+      - targets:
+          - localhost
+        labels:
+          service: wk_model
+          instance: 192.168.0.8
+          __path__: /var/log/java/wk_model/*.log
+      - targets:
+          - localhost
+        labels:
+          service: wk_resource
+          instance: 192.168.0.8
+          __path__: /var/log/java/wk_resource/*.log
+      - targets:
+          - localhost
+        labels:
+          service: wk_login
+          instance: 192.168.0.8
+          __path__: /var/log/java/wk_login/*.log
+      - targets:
+          - localhost
+        labels:
+          service: wk_file
+          instance: 192.168.0.8
+          __path__: /var/log/java/wk_file/*.log
+      - targets:
+          - localhost
+        labels:
+          service: wk_search
+          instance: 192.168.0.8
+          __path__: /var/log/java/wk_search/*.log
+      - targets:
+          - localhost
+        labels:
+          service: wk_admin
+          instance: 192.168.0.8
+          __path__: /var/log/java/wk_admin/*.log
+          

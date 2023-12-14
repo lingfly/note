@@ -1,3 +1,21 @@
+
+## vs code
+1. 跳到上/下一个光标位置： alt + ←/→
+
+2. 函数参数提示：ctrl + shift + space
+
+3. 多行编辑：alt + shift + 鼠标
+
+4. 格式化：shift + alr + F
+
+## vs
+
+1. 跳到上一个光标位置： ctrl + -
+
+2. 跳到下一个光标位置： ctrl + shift + -
+
+## windows
+
 Win键+ 向上键最大化窗口
 
 Win键+ 向左键将窗口左移
@@ -17,11 +35,3 @@ Win键+L 锁定计算机或切换用户
 Win键+Shift+M 将最小化的窗口还原到桌面
 
 Win键+R 打开“运行”对话框
-
-
-
-
-
-
-
-
