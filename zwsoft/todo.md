@@ -1,6 +1,6 @@
 
-1218 18.00-19.00
-1218 18.00-20.30
+1225 18.00-19.00
+1226 18.00-20.30
 
 
 ## todo
@@ -18,7 +18,7 @@ MK-13651 bim项目管理
 
 MK-12537 mongo加载方案
 
-
+jdbc:mysql://rm-wz94s8x8wyj9qjpc8.mysql.rds.aliyuncs.com:3306/wk_lps?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
 
 ## done
 
@@ -57,3 +57,6 @@ MK-14324、MK-14295 保存并发异常
 
 总的来说，今年是非常充实的一年，这一年，我们不仅看到了悟空的成功发布，个人能力也得到了充分的锻炼。
 展望未来，希望悟空团队将继续在新的一年里取得更大的成就。
+
+
+curl -d "apiUser=sc_jxw45j_test_inZSiu&apiKey=16d6f4411b5893f600c126a220842b7c&to=932104905@qq.com&from=service@sendcloud.im&fromname=SendCloud测试邮件&subject=来自SendCloud的第一封邮件！&html=你太棒了！你已成功的从SendCloud发送了一封测试邮件，接下来快登录前台去完善账户信息吧！&respEmailId=true" https://api.sendcloud.net/apiv2/mail/send
