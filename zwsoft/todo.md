@@ -1,6 +1,7 @@
 
-1225 18.00-19.00
-1226 18.00-20.30
+0108 18.00-21.00
+0109 18.00-20.30
+
 
 
 ## todo
@@ -35,28 +36,18 @@ MK-14324、MK-14295 保存并发异常
 ## 为什么后端不能生成处理树结构
 
 
-
-一年时间很快就过去了，回想起来，今年的工作重心基本上都在bim的项目管理上，
-在这个过程中，我们差不多把悟空1.0发布的流程又重新走了一遍。在后端功能上，从一开始的定义AO类型，
-到策略的权限管理；在运维部署上，从一开始的分支部署，到公有云的一键部署。
-悟空1.0发布的时候，挺多内容是我没有参与的，所以对整体流程知之甚少，而在这一年里通过对bim部分工作的处理，有了更加全面的认识。
-同时也看了一些估计平时不会多看的代码，比如说antlr的表达式解析，要是没有bim的需求，遇到相关的问题大概率只是交给其他同事处理，
-我也就没有了深入接触的动力。
-类似的还有oss存储，在这之前我并没有使用过oss，看了这部分的实现，觉得精灵写的能够兼容多种oss的代码确实有独到之处。
-
-接下来说下对明年的规划，首先应该考虑的应该是对c++层的封装，尽管目前我们还没有着手c++功能的实现，
-但是可预见的问题一点也少，比如针对odbc的sql优化，如何提供手动管理事务的能力，再比如接入redis缓存。
-除了这些框架部分的内容，在未来比较长的一段时间里，随着业务需求的增加，对c++的改动只增不减，所以明年我会
-尽可能多学习一些c++的知识。
-
-然后就是运维方面，没想到兜兜转转最后还是k8s，现在还不确定k8s能否满足我们对外网部署的需求，但既然已经决定要上了，
-总得先试试能实现到什么程度。
-
-还有的可能就是消息服务了，对于张总提出的消息通知、定时发送这些功能我感觉实现起来应该问题不大，但是对于能否优化保存加载暂时存疑，
-这也是一个比较有挑战的事情。
-
-总的来说，今年是非常充实的一年，这一年，我们不仅看到了悟空的成功发布，个人能力也得到了充分的锻炼。
-展望未来，希望悟空团队将继续在新的一年里取得更大的成就。
+0 21 * * * <command> && (crontab -l | sed '/<command>/d' | crontab -)
 
 
-curl -d "apiUser=sc_jxw45j_test_inZSiu&apiKey=16d6f4411b5893f600c126a220842b7c&to=932104905@qq.com&from=service@sendcloud.im&fromname=SendCloud测试邮件&subject=来自SendCloud的第一封邮件！&html=你太棒了！你已成功的从SendCloud发送了一封测试邮件，接下来快登录前台去完善账户信息吧！&respEmailId=true" https://api.sendcloud.net/apiv2/mail/send
+```sh
+curl -d 'apiUser=***&apiKey=***&from=test@test.com&fromName=liubida&subject=测试&replyTo=reply@test.com&templateInvokeName=ifaxin_bill' --data-urlencode 'xsmtpapi={"to": ["ben@ifaxin.com", "joe@ifaxin.com"],"sub":{"%name%": ["Ben", "Joe"],"%money%":[288, 497]}}&headers={"header1": "value1", "header2": "value2"}' http://api2.sendcloud.net/api/mail/sendtemplate
+```
+
+
+
+```sh
+SHELL=/usr/bin/bash
+PATH=/usr/bin
+MAILTO=root
+12 20 * * * root /home/aliyun/update_version.sh 
+```
