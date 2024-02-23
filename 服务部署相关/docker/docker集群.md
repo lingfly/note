@@ -103,3 +103,14 @@ docker node inspect node1 --pretty
 docker node update --label-rm type node1
 ```
 
+## 注意事项
+
+1. 要开启防火墙(管理节点和工作节点)
+
+    ```sh
+    firewall-cmd --zone=public --add-port=2377/tcp --permanent
+    firewall-cmd --zone=public --add-port=7946/tcp --permanent
+    firewall-cmd --zone=public --add-port=7946/udp --permanent
+    firewall-cmd --zone=public --add-port=4789/tcp --permanent
+    firewall-cmd --zone=public --add-port=4789/udp --permanent
+    ```
