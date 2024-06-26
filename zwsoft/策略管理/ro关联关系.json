@@ -1,0 +1,1443 @@
+[
+  {
+    "name": "BaseProjectMgmt",
+    "kind": 1,
+    "children": {
+      "ProjectMgmtProduct": [
+        {
+          "name": "PCDbProductDefinition",
+          "kind": 1,
+          "children": {
+            "PCDbProductReference": [
+              {
+                "name": "PCDbProductDefinition",
+                "kind": 1,
+                "children": {},
+                "loop": true
+              }
+            ],
+            "PCDbAtomReference": [
+              {
+                "name": "PCDbAtomDefinition",
+                "kind": 1,
+                "children": {}
+              }
+            ],
+            "PCDbOwnerReference": [
+              {
+                "name": "PCDbLink",
+                "kind": 1,
+                "children": {}
+              },
+              {
+                "name": "PCDbPublication",
+                "kind": 1,
+                "children": {}
+              },
+              {
+                "name": "PCDbExpression",
+                "kind": 1,
+                "children": {}
+              }
+            ],
+            "BmDbConnectionReference": [
+              {
+                "name": "BmDbConnection",
+                "kind": 1,
+                "children": {}
+              }
+            ]
+          }
+        }
+      ],
+      "ProjectMgmtFamilyDef": [
+        {
+          "name": "PCDbProductDefinition",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ],
+      "MemberOfProjectMgmt": [
+        {
+          "name": "Person",
+          "kind": 1,
+          "children": {
+            "AssignedSecurityContext": [
+              {
+                "name": "SecurityContext",
+                "kind": 1,
+                "children": {
+                  "SecurityContextProject": [
+                    {
+                      "name": "Project",
+                      "kind": 1,
+                      "children": {
+                        "Member": [
+                          {
+                            "name": "Organization",
+                            "kind": 1,
+                            "children": {
+                              "OrganizationLocation": [
+                                {
+                                  "name": "Location",
+                                  "kind": 1,
+                                  "children": {}
+                                }
+                              ],
+                              "Employee": [
+                                {
+                                  "name": "Person",
+                                  "kind": 1,
+                                  "children": {},
+                                  "loop": true
+                                }
+                              ],
+                              "OrganizationRepresentative": [
+                                {
+                                  "name": "Person",
+                                  "kind": 1,
+                                  "children": {},
+                                  "loop": true
+                                }
+                              ],
+                              "OrganizationRegion": [
+                                {
+                                  "name": "Region",
+                                  "kind": 1,
+                                  "children": {}
+                                }
+                              ],
+                              "Member": [
+                                {
+                                  "name": "Company",
+                                  "kind": 1,
+                                  "children": {
+                                    "OrganizationLocation": [
+                                      {
+                                        "name": "Location",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      }
+                                    ],
+                                    "Employee": [
+                                      {
+                                        "name": "Person",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      }
+                                    ],
+                                    "CompanyDepartment": [
+                                      {
+                                        "name": "Department",
+                                        "kind": 1,
+                                        "children": {
+                                          "OrganizationLocation": [
+                                            {
+                                              "name": "Location",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            }
+                                          ],
+                                          "Employee": [
+                                            {
+                                              "name": "Person",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            }
+                                          ],
+                                          "CompanyDepartment": [
+                                            {
+                                              "name": "Department",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            }
+                                          ],
+                                          "OrganizationRepresentative": [
+                                            {
+                                              "name": "Person",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            }
+                                          ],
+                                          "DepartmentEmployee": [
+                                            {
+                                              "name": "Person",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            }
+                                          ],
+                                          "OrganizationRegion": [
+                                            {
+                                              "name": "Region",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            }
+                                          ],
+                                          "Member": [
+                                            {
+                                              "name": "BusinessUnit",
+                                              "kind": 1,
+                                              "children": {
+                                                "OrganizationLocation": [
+                                                  {
+                                                    "name": "Location",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  }
+                                                ],
+                                                "Employee": [
+                                                  {
+                                                    "name": "Person",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  }
+                                                ],
+                                                "CompanyDepartment": [
+                                                  {
+                                                    "name": "Department",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  }
+                                                ],
+                                                "OrganizationRegion": [
+                                                  {
+                                                    "name": "Region",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  }
+                                                ],
+                                                "BusinessUnitEmployee": [
+                                                  {
+                                                    "name": "Person",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  }
+                                                ],
+                                                "Division": [
+                                                  {
+                                                    "name": "BusinessUnit",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  }
+                                                ],
+                                                "Member": [
+                                                  {
+                                                    "name": "Plant",
+                                                    "kind": 1,
+                                                    "children": {
+                                                      "OrganizationLocation": [
+                                                        {
+                                                          "name": "Location",
+                                                          "kind": 1,
+                                                          "children": {},
+                                                          "loop": true
+                                                        }
+                                                      ],
+                                                      "Employee": [
+                                                        {
+                                                          "name": "Person",
+                                                          "kind": 1,
+                                                          "children": {},
+                                                          "loop": true
+                                                        }
+                                                      ],
+                                                      "OrganizationRegion": [
+                                                        {
+                                                          "name": "Region",
+                                                          "kind": 1,
+                                                          "children": {},
+                                                          "loop": true
+                                                        }
+                                                      ],
+                                                      "Member": [
+                                                        {
+                                                          "name": "Person",
+                                                          "kind": 1,
+                                                          "children": {},
+                                                          "loop": true
+                                                        },
+                                                        {
+                                                          "name": "Organization",
+                                                          "kind": 1,
+                                                          "children": {},
+                                                          "loop": true
+                                                        },
+                                                        {
+                                                          "name": "Company",
+                                                          "kind": 1,
+                                                          "children": {},
+                                                          "loop": true
+                                                        },
+                                                        {
+                                                          "name": "BusinessUnit",
+                                                          "kind": 1,
+                                                          "children": {},
+                                                          "loop": true
+                                                        },
+                                                        {
+                                                          "name": "Plant",
+                                                          "kind": 1,
+                                                          "children": {},
+                                                          "loop": true
+                                                        },
+                                                        {
+                                                          "name": "Department",
+                                                          "kind": 1,
+                                                          "children": {},
+                                                          "loop": true
+                                                        }
+                                                      ]
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "Person",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  },
+                                                  {
+                                                    "name": "Organization",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  },
+                                                  {
+                                                    "name": "Company",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  },
+                                                  {
+                                                    "name": "BusinessUnit",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  },
+                                                  {
+                                                    "name": "Department",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            {
+                                              "name": "Person",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            },
+                                            {
+                                              "name": "Organization",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            },
+                                            {
+                                              "name": "Company",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            },
+                                            {
+                                              "name": "Plant",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            },
+                                            {
+                                              "name": "Department",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ],
+                                    "Subsidiary": [
+                                      {
+                                        "name": "Company",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      }
+                                    ],
+                                    "OrganizationRegion": [
+                                      {
+                                        "name": "Region",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      }
+                                    ],
+                                    "Division": [
+                                      {
+                                        "name": "BusinessUnit",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      }
+                                    ],
+                                    "Member": [
+                                      {
+                                        "name": "Person",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      },
+                                      {
+                                        "name": "Organization",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      },
+                                      {
+                                        "name": "Company",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      },
+                                      {
+                                        "name": "BusinessUnit",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      },
+                                      {
+                                        "name": "Plant",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      },
+                                      {
+                                        "name": "Department",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "name": "Person",
+                                  "kind": 1,
+                                  "children": {},
+                                  "loop": true
+                                },
+                                {
+                                  "name": "Organization",
+                                  "kind": 1,
+                                  "children": {},
+                                  "loop": true
+                                },
+                                {
+                                  "name": "BusinessUnit",
+                                  "kind": 1,
+                                  "children": {},
+                                  "loop": true
+                                },
+                                {
+                                  "name": "Plant",
+                                  "kind": 1,
+                                  "children": {},
+                                  "loop": true
+                                },
+                                {
+                                  "name": "Department",
+                                  "kind": 1,
+                                  "children": {},
+                                  "loop": true
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name": "Person",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          },
+                          {
+                            "name": "Company",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          },
+                          {
+                            "name": "BusinessUnit",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          },
+                          {
+                            "name": "Plant",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          },
+                          {
+                            "name": "Department",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "SecurityContextRole": [
+                    {
+                      "name": "Role",
+                      "kind": 1,
+                      "children": {
+                        "SubRole": [
+                          {
+                            "name": "Role",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "SecurityContextOrganization": [
+                    {
+                      "name": "Company",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ]
+                }
+              }
+            ],
+            "ProjectMgmtRecentEdit": [
+              {
+                "name": "PCDbProductDefinition",
+                "kind": 1,
+                "children": {},
+                "loop": true
+              }
+            ],
+            "RecentEditObjectConnect": [
+              {
+                "name": "PCDbDefinition",
+                "kind": 1,
+                "children": {
+                  "PCDbReference": [
+                    {
+                      "name": "PCDbDefinition",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ]
+                }
+              }
+            ],
+            "RecentAssignOwnerConnect": [
+              {
+                "name": "Person",
+                "kind": 1,
+                "children": {},
+                "loop": true
+              }
+            ],
+            "WorkPlace": [
+              {
+                "name": "Location",
+                "kind": 1,
+                "children": {},
+                "loop": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "BmDbFamilyDefinitionResource",
+    "kind": 1,
+    "children": {
+      "BmDbFamilyDefinitionRef": [
+        {
+          "name": "BmDbFamilyCategoryInfo",
+          "kind": 1,
+          "children": {
+            "BmDbFamilyCategoryInfoItem": [
+              {
+                "name": "BmDbElementTypeStructureInfo",
+                "kind": 1,
+                "children": {}
+              },
+              {
+                "name": "BmDbElementStructureInfo",
+                "kind": 1,
+                "children": {}
+              },
+              {
+                "name": "BmDbDependenceInfo",
+                "kind": 1,
+                "children": {}
+              },
+              {
+                "name": "BmDbDatumStructureInfo",
+                "kind": 1,
+                "children": {}
+              },
+              {
+                "name": "BmDbParameterContainer",
+                "kind": 1,
+                "children": {
+                  "BmDbParameterContainerItem": [
+                    {
+                      "name": "BmDbParameterClassDef",
+                      "kind": 1,
+                      "children": {
+                        "BmDbParameterClassItem": [
+                          {
+                            "name": "BmDbParameterDefinition",
+                            "kind": 1,
+                            "children": {}
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "BmDbAttributeInfo",
+                "kind": 1,
+                "children": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "IssueSetDef",
+    "kind": 1,
+    "children": {
+      "IssueBelongRef": [
+        {
+          "name": "PCDbProductDefinition",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ],
+      "IssueSetRef": [
+        {
+          "name": "IssueDef",
+          "kind": 1,
+          "children": {
+            "IssueImgRef": [
+              {
+                "name": "IssueImgDef",
+                "kind": 1,
+                "children": {}
+              }
+            ],
+            "IssueAssigneeRef": [
+              {
+                "name": "Person",
+                "kind": 1,
+                "children": {},
+                "loop": true
+              }
+            ],
+            "IssueHistoryRef": [
+              {
+                "name": "IssueHistory",
+                "kind": 1,
+                "children": {}
+              }
+            ],
+            "IssueCommentRef": [
+              {
+                "name": "IssueCommentDef",
+                "kind": 1,
+                "children": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "BmDbImportElement",
+    "kind": 1,
+    "children": {
+      "BmDbImportAtomRef": [
+        {
+          "name": "BmDbImportAtomDefinition",
+          "kind": 1,
+          "children": {}
+        }
+      ],
+      "BmDbImportProductRef": [
+        {
+          "name": "BmDbImportDefinition",
+          "kind": 1,
+          "children": {
+            "BmDbImportAtomRef": [
+              {
+                "name": "BmDbImportAtomDefinition",
+                "kind": 1,
+                "children": {},
+                "loop": true
+              }
+            ],
+            "BmDbImportProductRef": [
+              {
+                "name": "BmDbImportDefinition",
+                "kind": 1,
+                "children": {},
+                "loop": true
+              }
+            ],
+            "BmDbPublicationReference": [
+              {
+                "name": "BmDbPublication",
+                "kind": 1,
+                "children": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "PCDbParameterValue",
+    "kind": 1,
+    "children": {
+      "PCDbParameterReference": [
+        {
+          "name": "PCDbParameterDefinition",
+          "kind": 1,
+          "children": {}
+        }
+      ],
+      "PCDbOwnerReference": [
+        {
+          "name": "PCDbLink",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        },
+        {
+          "name": "PCDbPublication",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        },
+        {
+          "name": "PCDbExpression",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "PCDbCounterpartAtomRef",
+    "kind": 2,
+    "children": {
+      "PCDbUnified23dRelationRef": [
+        {
+          "name": "PCDbParamAtomRef",
+          "kind": 2,
+          "children": {}
+        },
+        {
+          "name": "PCDbDigitalPrdRef",
+          "kind": 2,
+          "children": {}
+        },
+        {
+          "name": "PCDbUnified23dPrdRef",
+          "kind": 2,
+          "children": {}
+        },
+        {
+          "name": "PCDbUnified23dAtomRef",
+          "kind": 2,
+          "children": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "BmDbProductCategoryDef",
+    "kind": 1,
+    "children": {
+      "BmDbDirLinkReference": [
+        {
+          "name": "BmDbDirItemLink",
+          "kind": 1,
+          "children": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "ProjectManagement",
+    "kind": 1,
+    "children": {
+      "DataVaults": [
+        {
+          "name": "WorkspaceVault",
+          "kind": 1,
+          "children": {
+            "SubVaults": [
+              {
+                "name": "WorkspaceVault",
+                "kind": 1,
+                "children": {},
+                "loop": true
+              }
+            ],
+            "VaultedObjects": [
+              {
+                "name": "DOCUMENTS",
+                "kind": 1,
+                "children": {
+                  "LatestVersion": [
+                    {
+                      "name": "DOCUMENTS",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ],
+                  "ActiveVersion": [
+                    {
+                      "name": "DOCUMENTS",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "PCDbDigitalPrdDef",
+                "kind": 1,
+                "children": {
+                  "PCDbAdvancedEngAtomRef": [
+                    {
+                      "name": "PCDbAdvancedEngHub",
+                      "kind": 1,
+                      "children": {}
+                    }
+                  ],
+                  "PCDbDigitalPrdRef": [
+                    {
+                      "name": "PdmDigtalPrdDefDemo",
+                      "kind": 1,
+                      "children": {
+                        "PCDbDigitalPrdRef": [
+                          {
+                            "name": "PCDbDigitalPrdDef",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          },
+                          {
+                            "name": "PdmDigtalPrdDefDemo",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "PCDbDigitalPrdDef",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ],
+                  "PCDbPrivateAtomReference": [
+                    {
+                      "name": "PCDbPrivateAtomDefinition",
+                      "kind": 1,
+                      "children": {}
+                    }
+                  ],
+                  "PCDbParamAtomRef": [
+                    {
+                      "name": "PCDbParamAtomDef",
+                      "kind": 1,
+                      "children": {}
+                    }
+                  ],
+                  "reltype_82": [
+                    {
+                      "name": "type_821",
+                      "kind": 1,
+                      "children": {}
+                    },
+                    {
+                      "name": "type_82",
+                      "kind": 1,
+                      "children": {
+                        "reltype_82": [
+                          {
+                            "name": "PCDbDigitalPrdDef",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          },
+                          {
+                            "name": "type_821",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          },
+                          {
+                            "name": "type_82",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          }
+                        ],
+                        "reltype_821": [
+                          {
+                            "name": "type_821",
+                            "kind": 1,
+                            "children": {},
+                            "loop": true
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "PCDbDigitalPrdDef",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "MemberList",
+    "kind": 1,
+    "children": {
+      "ListMember": [
+        {
+          "name": "Group",
+          "kind": 1,
+          "children": {}
+        },
+        {
+          "name": "Person",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "BmDbInsertableElement",
+    "kind": 1,
+    "children": {
+      "BmDbInsertableToHostType": [
+        {
+          "name": "BmDbHostElementType",
+          "kind": 1,
+          "children": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "ReviewDef",
+    "kind": 1,
+    "children": {
+      "ReviewerRef": [
+        {
+          "name": "Person",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ],
+      "ReviewModelRef": [
+        {
+          "name": "BmDbLwReleaseDef",
+          "kind": 1,
+          "children": {
+            "BmDbBcLwStreamRef": [
+              {
+                "name": "BmDbBcLwStreamDef",
+                "kind": 1,
+                "children": {}
+              }
+            ],
+            "BmDbLwReleaseToProductRef": [
+              {
+                "name": "BmDbProduct",
+                "kind": 1,
+                "children": {
+                  "BmDbParameterDefinitionRef": [
+                    {
+                      "name": "BmDbParameterDefinition",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ],
+                  "BmDbResourceSetRef": [
+                    {
+                      "name": "BmDbResourceSet",
+                      "kind": 1,
+                      "children": {
+                        "BmDbLayerLibraryRef": [
+                          {
+                            "name": "BmDbLayerLibrary",
+                            "kind": 1,
+                            "children": {
+                              "BmDbLayerLibraryItem": [
+                                {
+                                  "name": "BmDbLayer",
+                                  "kind": 1,
+                                  "children": {
+                                    "BmDbLayerToLayer": [
+                                      {
+                                        "name": "BmDbLayer",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "BmDbResourceSetItem": [
+                          {
+                            "name": "BmDbFamilyLibrary",
+                            "kind": 1,
+                            "children": {
+                              "BmDbFamilyLibraryItem": [
+                                {
+                                  "name": "BmDbFamilyTemplate",
+                                  "kind": 1,
+                                  "children": {
+                                    "BmDbParameterDefinitionRef": [
+                                      {
+                                        "name": "BmDbParameterDefinition",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      }
+                                    ],
+                                    "BmDbResourceSetRef": [
+                                      {
+                                        "name": "BmDbResourceSet",
+                                        "kind": 1,
+                                        "children": {},
+                                        "loop": true
+                                      }
+                                    ],
+                                    "BmDbFamilyToType": [
+                                      {
+                                        "name": "BmDbElementType",
+                                        "kind": 1,
+                                        "children": {
+                                          "BmDbParameterRef": [
+                                            {
+                                              "name": "BmDbParameterValue",
+                                              "kind": 1,
+                                              "children": {
+                                                "BmDbParameterToDefinitionRef": [
+                                                  {
+                                                    "name": "BmDbParameterDefinition",
+                                                    "kind": 1,
+                                                    "children": {},
+                                                    "loop": true
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ],
+                                          "BmDbPipeConnectSettingReference": [
+                                            {
+                                              "name": "BmDbPipeConnectSetting",
+                                              "kind": 1,
+                                              "children": {}
+                                            }
+                                          ],
+                                          "BmDbSubTypeParameter": [
+                                            {
+                                              "name": "BmDbElementType",
+                                              "kind": 1,
+                                              "children": {},
+                                              "loop": true
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "BmDbParameterQueryLibraryRef": [
+                          {
+                            "name": "BmDbParameterQueryLibrary",
+                            "kind": 1,
+                            "children": {
+                              "BmDbParameterQueryLibraryItem": [
+                                {
+                                  "name": "BmDbParameterQueryRule",
+                                  "kind": 1,
+                                  "children": {}
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "ReviewCommentRef": [
+        {
+          "name": "ReviewCommentDef",
+          "kind": 1,
+          "children": {}
+        }
+      ],
+      "ReviewRef": [
+        {
+          "name": "BIMProjectMgmt",
+          "kind": 1,
+          "children": {}
+        }
+      ]
+    }
+  },
+  {
+    "name": "PCDbVisRootDefinition",
+    "kind": 1,
+    "children": {
+      "PCDbVisRootReference": [
+        {
+          "name": "PCDbDigitalPrdDef",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "BmDbAbstractDefinition",
+    "kind": 1,
+    "children": {
+      "BmDbParameterRef": [
+        {
+          "name": "BmDbParameterValue",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ],
+      "BmDbPublicationReference": [
+        {
+          "name": "BmDbPublication",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ],
+      "BmDbAbstractProductRef": [
+        {
+          "name": "BmDbAbstractProduct",
+          "kind": 1,
+          "children": {
+            "BmDbConfigureReference": [
+              {
+                "name": "BmDbConfigure",
+                "kind": 1,
+                "children": {}
+              }
+            ],
+            "BmDbProductLinkInfoRef": [
+              {
+                "name": "BmDbProductLinkInfo",
+                "kind": 1,
+                "children": {}
+              }
+            ],
+            "BmDbProductLinkReference": [
+              {
+                "name": "BmDbAbstractProduct",
+                "kind": 1,
+                "children": {},
+                "loop": true
+              }
+            ],
+            "BmDbSubtypeParamDefRef": [
+              {
+                "name": "BmDbSubtypeParamDefinition",
+                "kind": 1,
+                "children": {}
+              }
+            ],
+            "BmDbViewReference": [
+              {
+                "name": "BmDbView",
+                "kind": 1,
+                "children": {
+                  "BmDbViewToLayer": [
+                    {
+                      "name": "BmDbLayer",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ],
+                  "BmDbViewToViewElem": [
+                    {
+                      "name": "BmDbViewElement",
+                      "kind": 1,
+                      "children": {}
+                    }
+                  ]
+                }
+              }
+            ],
+            "BmDbElementReference": [
+              {
+                "name": "BmDbElement",
+                "kind": 1,
+                "children": {
+                  "BmDbAtomReference": [
+                    {
+                      "name": "BmDbAtomDefinition",
+                      "kind": 1,
+                      "children": {}
+                    }
+                  ],
+                  "BmDbElementTypeReference": [
+                    {
+                      "name": "BmDbElementType",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ],
+                  "BmDbSubTypeParameter": [
+                    {
+                      "name": "BmDbElementType",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ],
+                  "BmDbElementToInsertableType": [
+                    {
+                      "name": "BmDbInsertableType",
+                      "kind": 1,
+                      "children": {}
+                    }
+                  ],
+                  "BmDbElementToSystemType": [
+                    {
+                      "name": "BmDbSystemType",
+                      "kind": 1,
+                      "children": {}
+                    }
+                  ],
+                  "BmDbSubElementReference": [
+                    {
+                      "name": "BmDbElement",
+                      "kind": 1,
+                      "children": {},
+                      "loop": true
+                    }
+                  ],
+                  "BmDbAbstractAtomRef": [
+                    {
+                      "name": "BmDbAbstractAtomDefinition",
+                      "kind": 1,
+                      "children": {}
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "BmDbElement",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "BmDbProductCacheDef",
+    "kind": 1,
+    "children": {
+      "BmDbProductCacheRef": [
+        {
+          "name": "PCDbDigitalPrdDef",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        },
+        {
+          "name": "BmDbFamilyTemplate",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        },
+        {
+          "name": "BmDbProduct",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "BmDbSubTypeParameter",
+    "kind": 2,
+    "children": {
+      "BmDbSubtypeParamToDefRef": [
+        {
+          "name": "BmDbSubtypeParamDefinition",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "BmDbAbstractProductRef",
+    "kind": 2,
+    "children": {
+      "BmDbElementRefToStyle": [
+        {
+          "name": "BmDbStyle",
+          "kind": 1,
+          "children": {
+            "BmDbStyleToStyle": [
+              {
+                "name": "BmDbStyle",
+                "kind": 1,
+                "children": {},
+                "loop": true
+              }
+            ]
+          }
+        }
+      ],
+      "BmDbElementRefToLayer": [
+        {
+          "name": "BmDbLayer",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "PCDbCounterpartPrdRef",
+    "kind": 2,
+    "children": {
+      "PCDbUnified23dRelationRef": [
+        {
+          "name": "PCDbParamAtomRef",
+          "kind": 2,
+          "children": {},
+          "loop": true
+        },
+        {
+          "name": "PCDbDigitalPrdRef",
+          "kind": 2,
+          "children": {},
+          "loop": true
+        },
+        {
+          "name": "PCDbUnified23dPrdRef",
+          "kind": 2,
+          "children": {},
+          "loop": true
+        },
+        {
+          "name": "PCDbUnified23dAtomRef",
+          "kind": 2,
+          "children": {},
+          "loop": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "Workspace",
+    "kind": 1,
+    "children": {
+      "WorkspaceMember": [
+        {
+          "name": "Person",
+          "kind": 1,
+          "children": {},
+          "loop": true
+        }
+      ]
+    }
+  }
+]

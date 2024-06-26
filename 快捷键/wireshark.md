@@ -5,6 +5,9 @@
 ```sh
 # 生成cap文件
 tcpdump -i <网卡> -w net.cap
+
+# -s 0 参数告诉 tcpdump 捕获整个数据包而不进行截断。
+tcpdump -i eth0 -s 0 -w /tmp/eth0.pcap
 ```
 
 ## 报文过滤
