@@ -1,7 +1,6 @@
 
 
-## 数据类型转换
+## IDEA外部工具生成jni header
 
-### 对于基本数据类型
-
-对于基本数据类型，首先确定是否需要null值，如果不需要，直接使用基本类型，不能使用包装类
+1. Program: -jni -classpath $OutputPath$; -d $FileDir$ $FileClass$
+2. working directory: $ProjectFileDir$
