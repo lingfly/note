@@ -1,1 +1,18 @@
-BmDbProduct->BmDbResourceSetRef->BmDbResourceSetItem->BmDbFamilyLibrary->BmDbFamilyLibraryItem->BmDbFamilyTemplate
+{
+    "code": 200,
+    "data": {
+        "7852cd7c-8591-4368-a445-7b3cd71b7667": {
+            "dos": [
+                {
+                    ...
+                    "version_id": "xxx",
+                    ...
+                }
+            ],
+            "ros": []
+        }
+    },
+    "idx": [],
+    "msg": "success",
+    "params": []
+}

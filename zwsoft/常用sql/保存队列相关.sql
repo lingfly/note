@@ -1,15 +1,18 @@
 -- 查询保存的json
 SELECT
+    attr.oid,
 	file.store_path,
 	size/1024/1024,
-	FROM_UNIXTIME( upload_time ) 
+	FROM_UNIXTIME( upload_time ),
+	attr2.val
 FROM
 	attr_string_val_1 attr
 	JOIN obj_stream_1 st ON attr.oid = st.oid
 	JOIN wk_file_1 file ON st.str_uuid = file.uuid 
+	JOIN attr_string_val_1 attr2 ON attr.oid=attr2.oid AND attr2.a_oid = ( SELECT oid FROM wk_ao.object_attr_lib WHERE NAME = 'TaskState' ) 
 WHERE
 	attr.a_oid = ( SELECT oid FROM wk_ao.object_attr_lib WHERE NAME = 'TaskRootId' ) 
-	AND attr.val = '4aca5d3d-f0c5-40c5-9e9f-02560fe98546' 
+	AND attr.val = '8b0f6415-6c9c-4b14-9203-e90a8776eb9b' 
 ORDER BY
 	file.upload_time ASC;
 
