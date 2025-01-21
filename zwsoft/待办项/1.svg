@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- 标题 -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">
+        系统性能优化对比
+    </text>
+    
+    <!-- 图例 -->
+    <rect x="580" y="80" width="20" height="20" fill="#ff6b6b"/>
+    <rect x="580" y="110" width="20" height="20" fill="#4ecdc4"/>
+    <text x="610" y="95" font-size="14" fill="#333">优化前</text>
+    <text x="610" y="125" font-size="14" fill="#333">优化后</text>
+    
+    <!-- Y轴 -->
+    <line x1="100" y1="100" x2="100" y2="350" stroke="#333" stroke-width="2"/>
+    <!-- X轴 -->
+    <line x1="100" y1="350" x2="700" y2="350" stroke="#333" stroke-width="2"/>
+    
+    <!-- Y轴刻度 -->
+    <text x="90" y="350" text-anchor="end" font-size="12">0</text>
+    <text x="90" y="290" text-anchor="end" font-size="12">200</text>
+    <text x="90" y="230" text-anchor="end" font-size="12">400</text>
+    <text x="90" y="170" text-anchor="end" font-size="12">600</text>
+    <text x="90" y="110" text-anchor="end" font-size="12">800</text>
+    
+    <!-- 柱状图 -->
+    <!-- 响应时间 -->
+    <g transform="translate(150,0)">
+        <rect x="0" y="150" width="40" height="200" fill="#ff6b6b"/>
+        <rect x="50" y="250" width="40" height="100" fill="#4ecdc4"/>
+        <text x="20" y="370" text-anchor="middle" font-size="12">保存时间(s)</text>
+    </g>
+    
+    <!-- QPS -->
+    <g transform="translate(300,0)">
+        <rect x="0" y="200" width="40" height="150" fill="#ff6b6b"/>
+        <rect x="50" y="120" width="40" height="230" fill="#4ecdc4"/>
+        <text x="20" y="370" text-anchor="middle" font-size="12">QPS</text>
+    </g>
+    
+    <!-- CPU使用率 -->
+    <g transform="translate(450,0)">
+        <rect x="0" y="170" width="40" height="180" fill="#ff6b6b"/>
+        <rect x="50" y="250" width="40" height="100" fill="#4ecdc4"/>
+        <text x="20" y="370" text-anchor="middle" font-size="12">CPU使用率(%)</text>
+    </g>
+    
+    <!-- 内存使用 -->
+    <g transform="translate(600,0)">
+        <rect x="0" y="180" width="40" height="170" fill="#ff6b6b"/>
+        <rect x="50" y="270" width="40" height="80" fill="#4ecdc4"/>
+        <text x="20" y="370" text-anchor="middle" font-size="12">内存使用(GB)</text>
+    </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- 标题 -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">
+        MySQL逐条插入vs批量插入性能对比
+    </text>
+    
+    <!-- Y轴 -->
+    <line x1="100" y1="120" x2="100" y2="400" stroke="#333" stroke-width="2"/>
+    <!-- X轴 -->
+    <line x1="100" y1="400" x2="700" y2="400" stroke="#333" stroke-width="2"/>
+    
+    <!-- Y轴刻度 -->
+    <text x="90" y="400" text-anchor="end" font-size="12">0</text>
+    <text x="90" y="340" text-anchor="end" font-size="12">20</text>
+    <text x="90" y="280" text-anchor="end" font-size="12">40</text>
+    <text x="90" y="220" text-anchor="end" font-size="12">60</text>
+    <text x="90" y="160" text-anchor="end" font-size="12">80</text>
+    <text x="90" y="120" text-anchor="end" font-size="12">100</text>
+    <text x="60" y="260" text-anchor="middle" font-size="14" fill="#666" transform="rotate(-90,60,260)">
+        执行时间（秒）
+    </text>
+    
+    <!-- 柱状图 -->
+    <rect x="150" y="140" width="60" height="260" fill="#ff6b6b"/>
+    <rect x="300" y="320" width="60" height="80" fill="#4ecdc4"/>
+    <rect x="450" y="350" width="60" height="50" fill="#4ecdc4"/>
+    <rect x="600" y="370" width="60" height="30" fill="#4ecdc4"/>
+    
+    <!-- X轴标签 -->
+    <text x="180" y="430" text-anchor="middle" font-size="14">单条插入</text>
+    <text x="330" y="430" text-anchor="middle" font-size="14">批量(500)</text>
+    <text x="480" y="430" text-anchor="middle" font-size="14">批量(1000)</text>
+    <text x="630" y="430" text-anchor="middle" font-size="14">批量(2000)</text>
+    
+    <!-- 数值标签 -->
+    <text x="180" y="130" text-anchor="middle" font-size="12" font-weight="bold">87秒</text>
+    <text x="330" y="310" text-anchor="middle" font-size="12" font-weight="bold">26秒</text>
+    <text x="480" y="340" text-anchor="middle" font-size="12" font-weight="bold">16秒</text>
+    <text x="630" y="360" text-anchor="middle" font-size="12" font-weight="bold">10秒</text>
+    
+    <!-- 性能提升说明 -->
+    <text x="400" y="470" text-anchor="middle" font-size="14" fill="#666">
+        批量保存(2000)相比单条插入性能提升约8.7倍
+    </text>
+</svg>

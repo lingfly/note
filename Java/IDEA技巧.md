@@ -1,3 +1,4 @@
+## 快捷键
 1. Shift+F6 (重构 | 重命名 )
 
 2. 要展开选区，请按   Ctrl   W   。每次按   Ctrl   W   时，选区将扩展到代码的其他区域。
@@ -24,3 +25,10 @@
 要轻松定位列表中的条目，请开始输入其名称。
 
 10. 按   Ctrl   E   (  视图 | 最近的文件   )可查看最近打开的文件列表
+
+## 外部工具
+
+### IDEA外部工具生成jni header
+
+1. Program: -jni -classpath $OutputPath$; -d $FileDir$ $FileClass$
+2. working directory: $ProjectFileDir$

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <!-- 计算总时间和百分比 -->
+    <!-- 总时间: 227.32秒 -->
+    
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#ffffff"/>
+    
+    <!-- 标题 -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">
+        优化后核心阶段耗时分布
+    </text>
+    
+    <!-- 饼图 -->
+    <g transform="translate(300,250)">
+        <!-- transactionTime 82.6% -->
+        <path d="M0,0 L150,0 A150,150 0 0,1 -145.8,34.8 Z" fill="#FF6B6B"/>
+        <!-- memoryTime 7.1% -->
+        <path d="M0,0 L-145.8,34.8 A150,150 0 0,1 -149.8,8.0 Z" fill="#4ECDC4"/>
+        <!-- prepareTime 2.3% -->
+        <path d="M0,0 L-149.8,8.0 A150,150 0 0,1 -149.8,-8.0 Z" fill="#45B7D1"/>
+        <!-- createTaskTime 2.6% -->
+        <path d="M0,0 L-149.8,-8.0 A150,150 0 0,1 -148.3,-23.2 Z" fill="#96CEB4"/>
+        <!-- requestTime 5.4% -->
+        <path d="M0,0 L-148.3,-23.2 A150,150 0 0,1 150,0 Z" fill="#FFEEAD"/>
+    </g>
+
+    <!-- 饼图 -->
+<g transform="translate(300,250)">
+    <!-- transactionTime 297.2° -->
+    <path d="M0,0 L150,0 A150,150 0 1,1 -150,0 Z" fill="#FF6B6B"/>
+    <!-- memoryTime 25.5° -->
+    <path d="M0,0 L-150,0 A150,150 0 0,1 -142.5,45.0 Z" fill="#4ECDC4"/>
+    <!-- prepareTime 8.5° -->
+    <path d="M0,0 L-142.5,45.0 A150,150 0 0,1 -140.0,50.0 Z" fill="#45B7D1"/>
+    <!-- createTaskTime 9.4° -->
+    <path d="M0,0 L-140.0,50.0 A150,150 0 0,1 -135.0,55.0 Z" fill="#96CEB4"/>
+    <!-- requestTime 19.4° -->
+    <path d="M0,0 L-135.0,55.0 A150,150 0 0,1 150,0 Z" fill="#FFEEAD"/>
+</g>
+    
+    <!-- 图例 -->
+    <g transform="translate(550,180)">
+        <rect x="0" y="0" width="15" height="15" fill="#FF6B6B"/>
+        <text x="25" y="12" font-size="12">transactionTime (82.6%)</text>
+        
+        <rect x="0" y="25" width="15" height="15" fill="#4ECDC4"/>
+        <text x="25" y="37" font-size="12">memoryTime (7.1%)</text>
+        
+        <rect x="0" y="50" width="15" height="15" fill="#45B7D1"/>
+        <text x="25" y="62" font-size="12">prepareTime (2.3%)</text>
+        
+        <rect x="0" y="75" width="15" height="15" fill="#96CEB4"/>
+        <text x="25" y="87" font-size="12">createTaskTime (2.6%)</text>
+        
+        <rect x="0" y="100" width="15" height="15" fill="#FFEEAD"/>
+        <text x="25" y="112" font-size="12">requestTime (5.4%)</text>
+    </g>
+
+    <!-- 总计 -->
+    <text x="400" y="450" text-anchor="middle" font-size="14" fill="#666">
+        总耗时：227.32秒
+    </text>
+</svg>
