@@ -1,0 +1,29 @@
+distributed.lock.request.timeout=分布式锁请求超时
+c++.server.response.null=c++服务响应内容为空
+non-binary.is.not.support=不支持非二进制格式消息
+business.type.is.not.support=不支持的业务类型
+json.message.parse.error=json解析错误
+front.end.operation.error=前端操作出现异常
+temporary.file.overwrite.error=临时图纸覆盖原文件失败
+
+
+distributed.lock.request.timeout=Distributed lock request timeout
+c++.server.response.null=C++ server response is empty
+non-binary.is.not.support=Non-binary format messages are not supported
+business.type.is.not.support=Unsupported business type
+json.message.parse.error=JSON parsing error
+front.end.operation.error=Front-end operation exception
+temporary.file.overwrite.error=Failed to overwrite original file with temporary file
+
+
+distributed.lock.request.timeout=분산 잠금 요청 시간 초과
+c++.server.response.null=C++ 서버 응답이 비어 있음
+non-binary.is.not.support=비이진 형식 메시지는 지원되지 않음
+business.type.is.not.support=지원되지 않는 비즈니스 유형
+json.message.parse.error=JSON 파싱 오류
+front.end.operation.error=프론트엔드 작업 예외 발생
+temporary.file.overwrite.error=임시 파일로 원본 파일 덮어쓰기 실패
+
+
+
+

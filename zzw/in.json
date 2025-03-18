@@ -1,6 +1,98 @@
-{
-    "function": 1,
-    "data": {
+退出协同编辑		collaboration_edit_exit
+协同在线用户列表		collaboration_users_online
+初次进入协同		first_time_entering_collaboration   
+其他用户进入协同		other_user_entering_collaboration
+协同中项目被删除		collaboration_project_deleted_during_collaboration
+协同中被移出项目		removed_from_project_during_collaboration
+协同中编辑权限改变		editing_permission_changed_during_collaboration
+协同中被移出协同		removed_from_collaboration_during_collaboration
+协同中截止时间到期		deadline_reached_during_collaboration
+协同中服务崩溃		service_crashed_during_collaboration
+协同文件被锁		collaboration_file_locked
+文档锁定通知模板		doc_lock
+文档解锁通知模板		doc_unlock
+被邀请协同编辑		doc_edit_invite_start
+协同结束		doc_edit_invite_end
+协同设置调整		doc_edit_invite_update
+移出协同编辑邀请		doc_edit_invite_user_remove
 
-    }
-}
+
+
+1. minio nfs
+2. 文件管理：所有上传下载接口
+3. c++ 服务
+4. 返回fileid的接口价格oss_path字段
+
+/document/copy
+/document/move
+/document/override
+/document/duplicate
+/document/download
+/document/multiDownload
+/document/clearRecycle
+/document/upload
+/document/link
+/document/xref
+/document/xref/{id}
+/document/transferstatus
+/document/partDownload
+/document/fileSize
+/document/partFileUpload
+/document/print
+/document/batchPrint
+/document/formatTransfer
+/document/formatTransfer
+/document/overrideDoc
+/document/uploadCopy
+/document/fetchBlockList
+/document/inline
+/document/downloadOle
+/document/copyDocToSdk
+
+/project/printStyle/download 下载打印样式文件
+/js/v1/file/partDownload 分段下载lmf文件
+/js/v1/file/download 下载单个文件
+
+/version/text/download 下载字体查找文件
+/version/restore 恢复到版本
+/version/lmf 获取版本显示数据
+/version/text/info 获取文字信息
+/version/xref 获取版本关联xref
+/version/print 打印历史版本图纸
+/version/batchPrint 批量打印历史版本图纸
+/version/file 获取版本关联文件二进制流
+/version/delete 删除版本
+/version/cloudUpdate 云端创建版本
+/version/create 浏览页/工作区创建版本
+/version/fcmp 版本比对
+/version/download 版本下载
+/version/localUpdate 本地创建版本 
+
+
+/zrx/upload 上传Zrx文件
+/zrx/deleteByIds 批量删除Zrx文件
+/zrx/list 查询Zrx文件列表
+/zrx/execute 执行Zrx命令
+
+/anonymous/doc/upload 匿名用户文档上传
+/anonymous/doc/detail 获取文档详情
+/anonymous/font/gzip 读取项目字体GZIP压缩格式内容
+/anonymous/file/download 匿名下载
+/anonymous/lmf/partDownload 匿名分片下载
+/anonymous/layout/lmf 切换layout
+/anonymous/file/info 文件详情
+/anonymous/example/list 样例图纸列表查询
+/anonymous/thumbnail 根据文档id以二进制流方式获取缩略图内容
+/anonymous/transferStatus 查询文档转换状态
+/anonymous/layout/regen 重生成视口布局
+
+/font/download     字体下载
+/font/upload     字体文件上传
+/font/{id} 获取项目关联字体文件详细信息
+/font/delete 删除字体
+/font/gzip 以GZIP压缩格式下载项目字体
+/font//dealHistoryFont 解析历史的字体数据
+
+/client/v1/font/upload 字体文件上传
+/client/v1/font/listPage 分页查询字体信息列表
+/client/v1/font/delete 删除字体
