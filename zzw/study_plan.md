@@ -33,3 +33,13 @@
 
 
 ## aliyun
+
+
+## minio
+
+1. 一开始打算用filemanager统一适配，做完上传之后，做下载发现要统一的话所有文件需要在同一个地方，又转去适配lmf，然后发现lmf太多了
+2. 不适配lmf，就开始在下载接口实现兼容文件可能在两个地方的情况
+3. /document/batchPrint 存在c++服务报错，应该找谁配合处理？
+4. /document/formatTransfer同3
+5. /document/transfer 找不到
+6. 

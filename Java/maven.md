@@ -1,5 +1,11 @@
 # maven
 
+## 依赖规则
+
+1. 直接依赖优先
+2. 先声明优先
+3. 路径最近优先
+
 ## dependency
 
 ### optional
@@ -25,6 +31,7 @@ A -> B -> C(optional)，如果A没有直接引用C，则C不在A的依赖之中�
 | test     | test         | no       | junit       |
 | system   | compile,test | yes      |             |
 
+
 system和provided的区别是system必须手动指定依赖文件的路径，如：
 ```xml
 <dependency>
@@ -35,4 +42,18 @@ system和provided的区别是system必须手动指定依赖文件的路径，如
     <systemPath>${java.home}/lib/rt.jar</systemPath>
 </dependency>
 ```
+
+#### <scope>import</scope>
+
+表示将该 POM 类型的依赖 导入当前项目的 <dependencyManagement> 中。
+这只能在 <dependencyManagement> 块中使用，作用是把目标 BOM 中定义的依赖版本信息引入到当前项目中。
+
+### type
+
+#### <type>pom</type>
+
+表示这个依赖的 打包类型是 POM。
+也就是说，这个依赖并不是一个 jar 包，而是一个 POM 类型的项目，一般用于集中管理依赖版本。
+
+
 

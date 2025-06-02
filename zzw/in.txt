@@ -1,29 +1,8 @@
-distributed.lock.request.timeout=分布式锁请求超时
-c++.server.response.null=c++服务响应内容为空
-non-binary.is.not.support=不支持非二进制格式消息
-business.type.is.not.support=不支持的业务类型
-json.message.parse.error=json解析错误
-front.end.operation.error=前端操作出现异常
-temporary.file.overwrite.error=临时图纸覆盖原文件失败
-
-
-distributed.lock.request.timeout=Distributed lock request timeout
-c++.server.response.null=C++ server response is empty
-non-binary.is.not.support=Non-binary format messages are not supported
-business.type.is.not.support=Unsupported business type
-json.message.parse.error=JSON parsing error
-front.end.operation.error=Front-end operation exception
-temporary.file.overwrite.error=Failed to overwrite original file with temporary file
-
-
-distributed.lock.request.timeout=분산 잠금 요청 시간 초과
-c++.server.response.null=C++ 서버 응답이 비어 있음
-non-binary.is.not.support=비이진 형식 메시지는 지원되지 않음
-business.type.is.not.support=지원되지 않는 비즈니스 유형
-json.message.parse.error=JSON 파싱 오류
-front.end.operation.error=프론트엔드 작업 예외 발생
-temporary.file.overwrite.error=임시 파일로 원본 파일 덮어쓰기 실패
-
-
-
-
+亲爱的宝：
+    你总说没有被人追求过，可是我不是这么想的，拨动时间轮盘，回到两年前。是面对下班高峰的人潮汹涌，捧着花的我的羞涩，那是我第一次送花却惨遭拒绝的失落；
+    是次次深夜通话却仍没有打消你的疑虑时的惆怅；是第一次牵手时因为流汗而不敢的紧张。这些现在提起来显得无足轻重的经历，却让当时的我辗转反侧，这是我追求你的过程，
+    也是喜欢你的证明。
+    当然生活不全是这些苦涩，柳暗花明之后，是我在玩黑神话你在看资治通鉴的温馨
+    现在的我可能写不出什么动人情话，因为我明显地感觉到，我又一次站在人生的十字路口上，充满了迷茫，不知往哪边前进。
+    但是我希望我们能够顺利结婚，能够有个可爱的宝宝，并且在熬过这段迷茫时间的多年之后，回想起来，
+    是我们相遇的幸运，是我们相处的幸福，并且感慨我们当年做了正确的决定。

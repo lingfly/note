@@ -1,97 +1,29 @@
-{
-    "@class": "io.seata.rm.datasource.undo.BranchUndoLog",
-    "xid": "192.168.19.104:8091:3171162911040287809",
-    "branchId": 3171162911040287827,
-    "sqlUndoLogs": [
-        "java.util.ArrayList",
-        [
-            {
-                "@class": "io.seata.rm.datasource.undo.SQLUndoLog",
-                "sqlType": "UPDATE",
-                "tableName": "user",
-                "beforeImage": {
-                    "@class": "io.seata.rm.datasource.sql.struct.TableRecords",
-                    "tableName": "user",
-                    "rows": [
-                        "java.util.ArrayList",
-                        [
-                            {
-                                "@class": "io.seata.rm.datasource.sql.struct.Row",
-                                "fields": [
-                                    "java.util.ArrayList",
-                                    [
-                                        {
-                                            "@class": "io.seata.rm.datasource.sql.struct.Field",
-                                            "name": "user_id",
-                                            "keyType": "PRIMARY_KEY",
-                                            "type": -5,
-                                            "value": [
-                                                "java.lang.Long",
-                                                13082
-                                            ]
-                                        },
-                                        {
-                                            "@class": "io.seata.rm.datasource.sql.struct.Field",
-                                            "name": "name",
-                                            "keyType": "NULL",
-                                            "type": 12,
-                                            "value": "0313"
-                                        },
-                                        {
-                                            "@class": "io.seata.rm.datasource.sql.struct.Field",
-                                            "name": "age",
-                                            "keyType": "NULL",
-                                            "type": 4,
-                                            "value": 25
-                                        }
-                                    ]
-                                ]
-                            }
-                        ]
-                    ]
-                },
-                "afterImage": {
-                    "@class": "io.seata.rm.datasource.sql.struct.TableRecords",
-                    "tableName": "user",
-                    "rows": [
-                        "java.util.ArrayList",
-                        [
-                            {
-                                "@class": "io.seata.rm.datasource.sql.struct.Row",
-                                "fields": [
-                                    "java.util.ArrayList",
-                                    [
-                                        {
-                                            "@class": "io.seata.rm.datasource.sql.struct.Field",
-                                            "name": "user_id",
-                                            "keyType": "PRIMARY_KEY",
-                                            "type": -5,
-                                            "value": [
-                                                "java.lang.Long",
-                                                13082
-                                            ]
-                                        },
-                                        {
-                                            "@class": "io.seata.rm.datasource.sql.struct.Field",
-                                            "name": "name",
-                                            "keyType": "NULL",
-                                            "type": 12,
-                                            "value": "0315"
-                                        },
-                                        {
-                                            "@class": "io.seata.rm.datasource.sql.struct.Field",
-                                            "name": "age",
-                                            "keyType": "NULL",
-                                            "type": 4,
-                                            "value": 950
-                                        }
-                                    ]
-                                ]
-                            }
-                        ]
-                    ]
-                }
-            }
-        ]
-    ]
-}
+cad_print_page	left
+cad_print_page	right
+ent_permission	index
+pdm_permission	index
+
+docker push gitlab.zwsoft.cn:5050/yangjun/cloud2d_uat
+
+
+实体创建(19)      
+实体修改（18）   
+在线标注（7）
+更多编辑
+编辑辅助
+文字提取
+
+
+元件库 140001	查看元件库
+      140002	编辑元件库
+
+图外评论      40012	评论/批注
+
+    150001	查看电子签章
+            150002	上传电子签章
+            150003	下载电子签章
+            150004	保存电子签章
+            150005	删除电子签章
+
+
+            
